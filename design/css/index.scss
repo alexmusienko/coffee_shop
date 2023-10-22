@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+body {
+    color: #FFF;
+    font-family: 'Merienda';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.logo-divider {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+
+    .logo-line {
+        width: 60px;
+        height: 1px;
+        background-color: #FFF;
+
+        &.black {
+            background-color: #000;
+        }
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+menu {
+    width: fit-content;
+
+    li {
+        display: inline;
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            transition: font-size 0.5s;
+            &.black {
+                color: #000;
+            }
+
+            &:hover {
+                font-size: 14px;
+            }
+        }
+
+        img {
+            width: 35px;
+            height: 35px;
+            margin-right: -4px;
+        }
+    }
+}
+
+header {
+    height: 640px;
+    background: url(../img/main-bg.jpg) center no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    menu {
+        position: absolute;
+        left: 149px;
+        top: 30px;
+    }
+
+    .title {
+        text-align: center;
+
+        h1 {
+            color: #FFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 35px;
+            color: #FFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        button {
+            color: #FFF;
+            font-family: 'Merienda';
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 3px;
+            border: 1px solid #FFF;
+            background: rgba(196, 196, 196, 0.00);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            width: 120px;
+            height: 30px;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #000;
+                opacity: 0.5;
+            }
+        }
+
+    }
+}
+
+.aboutus {
+    padding-top: 80px;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 41px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        width: 589px;
+    }
+}
+
+.ourbest {
+    padding-top: 80px;
+    height: 495px;
+    background: url(../img/ourbest-bg.jpg) center no-repeat;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 39px;
+        text-align: center;
+        color: #000;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        gap: 71px;
+    }
+
+    .card {
+        width: 220px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.65);
+        padding: 20px;
+
+        .photo {
+            margin: 0 auto 14px;
+            width: 180px;
+            height: 200px;
+        }
+
+        &__title {
+            color: #000;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        &__price {
+            color: #000;
+            text-align: right;
+            font-size: 14px;
+            font-weight: 700;
+
+        }
+    }
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

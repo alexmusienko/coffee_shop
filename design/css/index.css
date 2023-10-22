@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FFF;
+  font-family: "Merienda";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.logo-divider {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.logo-divider .logo-line {
+  width: 60px;
+  height: 1px;
+  background-color: #FFF;
+}
+.logo-divider .logo-line.black {
+  background-color: #000;
+}
+.logo-divider img {
+  width: 40px;
+}
+
+menu {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+menu li {
+  display: inline;
+  margin-right: 40px;
+}
+menu li:last-child {
+  margin-right: 0;
+}
+menu li a {
+  text-decoration: none;
+  color: #FFF;
+  transition: font-size 0.5s;
+}
+menu li a.black {
+  color: #000;
+}
+menu li a:hover {
+  font-size: 14px;
+}
+menu li img {
+  width: 35px;
+  height: 35px;
+  margin-right: -4px;
+}
+
+header {
+  height: 640px;
+  background: url(../img/main-bg.jpg) center no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header menu {
+  position: absolute;
+  left: 149px;
+  top: 30px;
+}
+header .title {
+  text-align: center;
+}
+header .title h1 {
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+header .title p {
+  margin-top: 35px;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+header .title button {
+  color: #FFF;
+  font-family: "Merienda";
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+  background: rgba(196, 196, 196, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 120px;
+  height: 30px;
+  transition: 0.5s;
+}
+header .title button:hover {
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.aboutus {
+  padding-top: 80px;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+.aboutus h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.aboutus p {
+  margin-top: 41px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  width: 589px;
+}
+
+.ourbest {
+  padding-top: 80px;
+  height: 495px;
+  background: url(../img/ourbest-bg.jpg) center no-repeat;
+}
+.ourbest h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 39px;
+  text-align: center;
+  color: #000;
+}
+.ourbest .cards {
+  display: flex;
+  justify-content: center;
+  gap: 71px;
+}
+.ourbest .card {
+  width: 220px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 20px;
+}
+.ourbest .card .photo {
+  margin: 0 auto 14px;
+  width: 180px;
+  height: 200px;
+}
+.ourbest .card__title {
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.ourbest .card__price {
+  color: #000;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=index.css.map */
